@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import PlanetIcon from "./icon/icons8-planet-66.png";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 function Router() {
   let { language } = useParams();
@@ -36,11 +38,6 @@ function Router() {
       </div>
       <Routes>
         <Route path="/" element={<Home language={language} key={language} />} />
-        <Route
-          path="/projects"
-          element={<Portfolio key={language} language={language} />}
-        />
-        <Route path="/social" element={<Social key={language} />} />
       </Routes>
     </>
   );
