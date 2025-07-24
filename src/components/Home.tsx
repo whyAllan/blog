@@ -1,3 +1,4 @@
+import { getH}
 export default function Home({ language }: { language: string }) {
   //   getHomeStrings(language);
 

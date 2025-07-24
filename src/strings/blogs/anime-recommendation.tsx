@@ -1,4 +1,4 @@
-import type { Content } from "../../interfaces";
+import type { Content } from "../../utils/interfaces";
 
 ///////////////////////////// Top x animes of y genrre /////////////////////////
 
