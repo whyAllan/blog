@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import PlanetIcon from "./icon/icons8-planet-66.png";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Avaliableslanguages from "./utils/Avaliableslanguages";
 
 function Router() {
   let { language } = useParams();
@@ -15,9 +16,11 @@ function Router() {
     ) {
       language = "pt";
     } else language = "en";
-  }
+  } else if (!Avaliableslanguages.includes(language))
+    console.log("unexpected language");
 
   function changeLanguage() {
+    //JUst work as long as there is only 2 languages available
     if (language === "pt") {
       language = "en";
     } else {

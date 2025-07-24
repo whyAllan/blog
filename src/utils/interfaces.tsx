@@ -1,3 +1,4 @@
+// Blog content
 export interface Content {
   title: string;
   image: string;
