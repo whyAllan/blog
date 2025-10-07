@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { getNavbarStrings } from "../utils/strings/functions";
+import getNavbarStrings  from "../strings/pages/navbar";
 import { goTo } from "../utils/goto";
 
 function Navbar({ language }: { language: string }) {
-  const { projects } = getNavbarStrings(language);
+  const projects  = getNavbarStrings(language);
 
   let location = window.location.hash.split("/")[2];
   if (location === undefined) location = "";
